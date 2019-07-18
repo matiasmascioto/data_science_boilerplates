@@ -1,22 +1,22 @@
 input:
   a:
-    filepath_or_buffer: "data/raw/example.csv"
+    filepath_or_buffer: "../data/raw/example.csv"
     sep: ","
     encoding: "utf-8"
     index_col: False
   b:
-    io: "data/raw/example.xlsx"
+    io: "../data/raw/example.xlsx"
     sheet_name: 0
 
 
 output:
   a:
-    path_or_buf: "data/processed/output_a.csv"
+    path_or_buf: "../data/processed/output_a.csv"
     sep: ","
     encoding: "utf-8"
     index: True
   b:
-    path_or_buf: "data/processed/output_b.csv"
+    path_or_buf: "../data/processed/output_b.csv"
     sep: ";"
     encoding: "utf-8"
     index: False
