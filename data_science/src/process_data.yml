@@ -1,0 +1,12 @@
+input:
+  filepath_or_buffer: "../data/raw/titanic.csv"
+  sep: ","
+  encoding: "utf-8"
+  index_col: False
+
+
+output:
+  path_or_buf: "../data/processed/titanic.csv"
+  sep: ";"
+  encoding: "utf-8"
+  index: False
