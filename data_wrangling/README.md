@@ -15,8 +15,11 @@ Boilerplate to quickly get started with a *data wrangling* project.
 	|-- raw
 		|-- example.csv
 		|-- example.xlsx
+|-- logs
 |-- src
-	|-- process_data.py
-	|-- process_data.yml
+    |-- helpers
+    |-- tests
+	    |-- process_data.py
+	    |-- process_data.yml
 ```
 

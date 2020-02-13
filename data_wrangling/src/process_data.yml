@@ -20,3 +20,42 @@ output:
     sep: ";"
     encoding: "utf-8"
     index: False
+
+
+logs:
+  version: 1
+  formatters:
+    simple:
+      format: "%(asctime)s %(message)s"
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: DEBUG
+      formatter: simple
+      stream: ext://sys.stdout
+    file:
+      class: logging.handlers.RotatingFileHandler
+      level: DEBUG
+      formatter: simple
+      filename: "../logs/log_%Y_%m_%d_%H_%M_%S.log"
+      maxBytes: 1024
+  loggers:
+    console_logger:
+      level: DEBUG
+      handlers: [console]
+    file_logger:
+      level: DEBUG
+      handlers: [file]
+  root:
+    level: DEBUG
+    handlers: [console, file]
+
+#
+#logs:
+#  filename: "../logs/{}_logs.log"
+#  level: 10 # Debug
+##  level: 20 # Info
+##  level: 30 # Warning
+##  level: 40 # Error
+##  level: 50 # Critical
+#  format: "%(asctime)-15s %(message)s"
