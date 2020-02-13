@@ -19,7 +19,7 @@ Boilerplate to quickly get started with a *data wrangling* project.
 |-- src
     |-- helpers
     |-- tests
-	    |-- process_data.py
-	    |-- process_data.yml
+    |-- process_data.py
+    |-- process_data.yml
 ```
 
