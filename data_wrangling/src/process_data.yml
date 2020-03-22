@@ -49,13 +49,3 @@ logs:
   root:
     level: DEBUG
     handlers: [console, file]
-
-#
-#logs:
-#  filename: "../logs/{}_logs.log"
-#  level: 10 # Debug
-##  level: 20 # Info
-##  level: 30 # Warning
-##  level: 40 # Error
-##  level: 50 # Critical
-#  format: "%(asctime)-15s %(message)s"
