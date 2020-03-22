@@ -8,7 +8,10 @@ import yaml
 
 from datetime import datetime
 
+from helpers.helper_functions import timing
 
+
+@timing
 def main_function(config, logger):
     """ Main function """
     logger.info("Main function")
