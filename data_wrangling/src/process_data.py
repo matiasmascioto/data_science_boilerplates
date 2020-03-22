@@ -7,7 +7,6 @@ import pandas as pd
 import yaml
 
 from datetime import datetime
-from time import time
 
 
 def main_function(config, logger):
