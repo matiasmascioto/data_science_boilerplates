@@ -45,5 +45,5 @@ if __name__ == "__main__":
 
     try:
         main_function(config, logger)
-    except Exception as e:
+    except Exception:
         logger.exception("Exception occurred", exc_info=True)
