@@ -38,7 +38,9 @@ def main_function(config, logger):
 if __name__ == "__main__":
     config = yaml.safe_load(open("process_data.yml"))
 
-    config["logs"]["handlers"]["file"]["filename"] = datetime.now().strftime(config["logs"]["handlers"]["file"]["filename"])
+    config["logs"]["handlers"]["file"]["filename"] = datetime.now().strftime(
+        config["logs"]["handlers"]["file"]["filename"]
+    )
     logging.config.dictConfig(config["logs"])
     logger = logging.getLogger(__name__)
 
