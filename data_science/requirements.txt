@@ -11,7 +11,7 @@ jupyter-client==6.1.0
 jupyter-core==4.6.3
 kiwisolver==1.1.0
 matplotlib==3.2.1
-numpy==1.18.2
+numpy==1.22.0
 pandas==1.0.3
 parso==0.6.2
 pickleshare==0.7.5
